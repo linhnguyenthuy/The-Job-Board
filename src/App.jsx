@@ -6,14 +6,14 @@ const jobBoard = {
   jobs: {
     job: [
       {
-        className: "red",
+        classname: "red",
         title: "Full Time Sales Associate - Sydney Boutique",
         contractType: "CDI",
         country: "Australie",
         city: "Sydney",
       },
       {
-        className: "green",
+        classname: "green",
         title: "Responsable d'Atelier (H/F)",
         contractType: "CDD",
         country: "France",
@@ -22,13 +22,13 @@ const jobBoard = {
     ],
   },
 };
-
+console.log("logApp->", jobBoard.jobs.job);
 const App = () => {
   return (
     <>
       <main>
         <Header header={jobBoard.header} />
-        <Jobs data={jobBoard.jobs} />
+        <Jobs data={jobBoard.jobs.job} />
       </main>
     </>
   );
